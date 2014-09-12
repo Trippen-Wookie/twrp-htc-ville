@@ -104,5 +104,16 @@ TW_INCLUDE_DUMLOCK := true
 TW_INCLUDE_JB_CRYPTO := true
 TW_NO_SCREEN_BLANK := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_BATTERY_LED := htc-legacy
 BOARD_RECOVERY_BLDRMSG_OFFSET := 2048
 RECOVERY_VARIANT := twrp
+
+#MultiROM config. MultiROM also uses parts of TWRP config
+MR_INPUT_TYPE := type_a
+MR_INIT_DEVICES := device/htc/ville/mr_init_devices.c
+MR_DPI := hdpi
+MR_FSTAB := device/htc/ville/recovery.fstab
+MR_USE_MROM_FSTAB := true
+MR_DEVICE_HOOKS := device/htc/ville/mr_hooks.c
+MR_DEVICE_HOOKS_VER := 1
+MR_KEXEC_MEM_MIN := 0x85000000
