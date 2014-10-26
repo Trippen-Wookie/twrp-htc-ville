@@ -16,6 +16,11 @@ endif
 
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 
+PRODUCT_PACKAGES += \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/etc/fstab.qcom:recovery/root/fstab.qcom \
     $(LOCAL_PATH)/recovery/etc/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
