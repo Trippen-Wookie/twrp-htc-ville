@@ -2,7 +2,7 @@
 PRODUCT_RELEASE_NAME := ville
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/omni/config/common_full_phone.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/ville/device.mk)
